@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>See More — Check Out Guru</title>
+  <meta name="description" content="See more curated products.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <div class="brand-head">
+        <a href="index.html" style="display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:inherit">
+          <img src="logo/cguru.png" alt="Check Out Guru" class="site-logo" onerror="this.onerror=null;this.src='images/cguru.svg'">
+          <div>
+            <h1 class="logo" style="font-size:20px">Check Out Guru</h1>
+            <p class="tag" style="font-size:12px">Curated deals — See more</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="padding:18px 12px">
+    <a href="index.html" class="see-more-btn" style="margin-bottom:12px;display:inline-block">← Back to homepage</a>
+    <div class="see-more-layout">
+      <aside class="see-sidebar" aria-label="Search products">
+        <label for="see-search" style="display:block;font-weight:700;margin-bottom:8px">Find a product</label>
+        <input id="see-search" class="search-input" type="search" placeholder="Type product name..." aria-label="Search products">
+        <div class="price-range" style="margin-top:10px">
+          <label style="font-weight:600;font-size:13px;display:block;margin-bottom:6px">Price range</label>
+          <div style="display:flex;gap:8px">
+            <input id="price-min" type="number" inputmode="numeric" placeholder="Min" aria-label="Minimum price" style="flex:1;padding:6px 8px;border-radius:8px;border:1px solid rgba(0,0,0,0.06)">
+            <input id="price-max" type="number" inputmode="numeric" placeholder="Max" aria-label="Maximum price" style="flex:1;padding:6px 8px;border-radius:8px;border:1px solid rgba(0,0,0,0.06)">
+          </div>
+        </div>
+      </aside>
+
+      <div class="see-main">
+        <h2 id="page-title">See more</h2>
+        <p id="page-note" class="section-note" style="margin-top:6px;color:#333"></p>
+        <div id="see-grid" class="grid" style="margin-top:12px"></div>
+      </div>
+    </div>
+  </main>
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col about">
+        <h4>Check Out Guru</h4>
+        <p>Curated Shopee deals — trusted picks, handpicked promos and short reviews to help you buy smart.</p>
+      </div>
+
+      <div class="footer-col links">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="#featured">Top Deals</a></li>
+          <li><a href="#sec-electronics">Electronics</a></li>
+          <li><a href="#sec-home">Home</a></li>
+          <li><a href="#sec-fashion">Fashion</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col contact">
+        <h5>Contact</h5>
+        <p>Email: <a href="mailto:info@checkoutguru.example">info@checkoutguru.example</a></p>
+        <div class="social-links-footer" aria-label="Follow us">
+          <a class="social-link" href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" fill="currentColor"/></svg></a>
+          <a class="social-link" href="#" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3v12.5a3.5 3.5 0 1 1-3.5-3.5V7.2a6 6 0 0 0 3.5-1.2z" fill="currentColor"/><path d="M17 7.5a4 4 0 0 1-4-4v-.5h2a2 2 0 0 0 2 2v2.5z" fill="currentColor" opacity="0.9"/></svg></a>
+          <a class="social-link" href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="5" ry="5" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="12" cy="12" r="3" fill="currentColor"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2025 Check Out Guru — All rights reserved</p>
+    </div>
+  </footer>
+
+  <script>
+    // duplicate product data (kept inline for static site)
+    const products = [
+        {id:1,title:'Soundcore Wireless Earphones',price:'1,457.00',image:'images/toptrending/soundcoreearphones.png',category:'Electronics',affiliate:'https://s.shopee.ph/6KxkmIxJAq',rating:4.9},
+        {id:2,title:'Anker R50i True Wireless Earbuds',price:'725.00',image:'images/Electronics/wirelessearbuds.png',category:'Electronics',affiliate:'https://s.shopee.ph/2B8C2l3NKr',rating:4.9},
+        {id:3,title:'USB-C Fast Charging Type C',price:'228',image:'images/Electronics/usbtypecfastcharging.png',category:'Electronics',affiliate:'https://s.shopee.ph/10wEesutrk',rating:4.9},
+        {id:4,title:'Portable Wireless Bluetooth Speaker',price:'283.00',image:'images/Electronics/portablebluetoothspeaker.png',category:'Electronics',affiliate:'https://s.shopee.ph/1VsVG7pJmL',rating:4.8},
+        {id:5,title:'Mechanical Gaming Keyboard RGB',price:'1,156.00',image:'images/Electronics/mechanicalkeyboard.png',category:'Electronics',affiliate:'https://s.shopee.ph/9KbManRlAY',rating:4.9},
+
+        // Home
+        {id:6,title:'Acrylic shoes rack transparent box',price:'249.00',image:'images/Home/acrelicshowrack.png',category:'Home',affiliate:'https://s.shopee.ph/VzzPvJSTf',rating:4.8},
+        {id:7,title:'Tool Box Heavy Duty Plastic Tool Storage Box',price:'219.00',image:'images/Home/toolbox.png',category:'Home',affiliate:'https://s.shopee.ph/7pmaF0g4TQ',rating:4.8},
+        {id:8,title:'Air Fryer – Efficient, Compact Design for Fast',price:'2,654.00',image:'images/Home/airfryer.png',category:'Home',affiliate:'https://s.shopee.ph/6AeMGSDUVl',rating:5.0},
+        {id:9,title:'Enolux F5 Robot Vacuum Cleaner ',price:'2,960.00',image:'images/Home/robotvacuumcleaner.png',category:'Home',affiliate:'https://s.shopee.ph/6facrsx0ls',rating:5.0},
+        {id:10,title:'Garterized 4 in 1 Korea Cotton Bedding Set',price:'469.00',image:'images/Home/koreacottonbedding.png',category:'Home',affiliate:'https://s.shopee.ph/VzzYI8pO4',rating:4.8},
+        {id:11,title:'4 in 1 Bedding Set with Pillowcase Comforter',price:'472.00',image:'images/Home/beddingsetwithpillowcase.png',category:'Home',affiliate:'https://s.shopee.ph/2LRdjotcE0',rating:4.8},
+        {id:48,title:'Black Metal Wall Decor Iron Plants',price:'329.00',image:'images/Home/walldecorironplants.png',category:'Home',affiliate:'https://s.shopee.ph/6AeMK3E9fk',rating:4.9},
+        {id:49,title:'Aesthetic Minimalist Rose Flower Wall Decor',price:'149.00',image:'images/Home/roseflowerdecor.png',category:'Home',affiliate:'https://s.shopee.ph/10wGAg94im',rating:4.8},
+        
+        
+
+        // Fashion
+        {id:13,title:'Sunny&Co One shoulder top maxi dress',price:'218.00',image:'images/Fashion/maxidressfloral.png',category:'Fashion',affiliate:'https://s.shopee.ph/3B0kncxzox',rating:4.8},
+        {id:14,title:'Spaghetti Strap Maxi Dress for Women',price:'169.00',image:'images/Fashion/spaghettimaxidress.png',category:'Fashion',affiliate:'https://s.shopee.ph/3fx1PCmolf',rating:4.8},
+        {id:15,title:'Anti Radiation For Kids Eyeglasses Photochromic Glasses',price:'185.00',image:'images/Fashion/antiradiationglasses.png',category:'Fashion',affiliate:'https://s.shopee.ph/5AlpCxzvEn',rating:4.9},
+        {id:16,title:'Anti Radiation Eyeglass For Woman And Men',price:'165.00',image:'images/Fashion/antiradglassesformenandwomen.png',category:'Fashion',affiliate:'https://s.shopee.ph/AAAVAJMUEb',rating:4.8},
+        {id:17,title:'French Court Style Puff Sleeves',price:'343.00',image:'images/Fashion/puffsleeves.png',category:'Fashion',affiliate:'https://s.shopee.ph/20onRcmrlA',rating:4.8},
+        {id:52,title:'Unisex Plain Oversized T-shirt',price:'214.00',image:'images/Fashion/oversizetshirt.png',category:'Fashion',affiliate:'https://s.shopee.ph/BNAPhURGW',rating:4.8},
+        {id:53,title:'Athleisure Women Activewear',price:'270.00',image:'images/Fashion/womenactivewear.png',category:'Fashion',affiliate:'https://s.shopee.ph/9zr681sjCE',rating:4.9},
+        {id:54,title:'hoodie for men hip hop trend',price:'229.00',image:'images/Fashion/zipperhoddie.png',category:'Fashion',affiliate:'https://s.shopee.ph/5L5GZmVdDN',rating:4.9},
+
+
+        // Beauty
+        {id:18,title:'Garnier Vitamin C Serum Cleanser Foam Wash',price:'375.00',image:'images/Beauty/garnierserum.png',category:'Beauty',affiliate:'https://s.shopee.ph/1qVLYnjsbX',rating:4.9},
+        {id:19,title:'Lip Tint Waterproof Matte Finish',price:'195.00',image:'images/Beauty/waterliptint.png',category:'Beauty',affiliate:'https://s.shopee.ph/4LCgZKhut0',rating:4.9},
+        {id:20,title:'Charming Perfume For Men',price:'104.00',image:'images/Beauty/bravemanperfume.png',category:'Beauty',affiliate:'https://s.shopee.ph/Vzy0ZvHvq',rating:4.8},
+        {id:21,title:'Garnier 4PC Vitamin C Brightening Kit',price:'749.00',image:'images/Beauty/4pcbrighteningkit.png',category:'Beauty',affiliate:'https://s.shopee.ph/9fECtUpcHb',rating:4.9},
+        {id:22,title:'PURE SEDUCTION 236ml Perfume',price:'144.00',image:'images/Beauty/perfumeforwomen.png',category:'Beauty',affiliate:'https://s.shopee.ph/qcoPepSDZ',rating:4.9},
+        {id:23,title:'Blackheads Removal Mask Deep Cleansing',price:'179.00',image:'images/Beauty/blackheadremovalmask.png',category:'Beauty',affiliate:'https://s.shopee.ph/4fpWyzmdHh',rating:4.9},
+        {id:24,title:'DAZZLE ME Ink-Gloss Lip Tint',price:'272.00',image:'images/Beauty/dazzlemelipgloss.png',category:'Beauty',affiliate:'https://s.shopee.ph/4AtGLpWEWi',rating:4.8},
+        {id:50,title:'Bio-Collagen Real Deep Mask',price:'269.00',image:'images/Beauty/collagenmask.png',category:'Beauty',affiliate:'https://s.shopee.ph/7pmYlB1ABO',rating:5.0},
+        {id:51,title:'Makeup Setting Spray Matte Fix 60ml',price:'179.00',image:'images/Beauty/settingspray.png',category:'Beauty',affiliate:'https://s.shopee.ph/1BFepDjOXR',rating:4.9},
+
+        // Sports
+        {id:25,title:'Sports Chest Bag School Student Backpack',price:'259.00',image:'images/Sports/sportsbags.png',category:'Sports',affiliate:'https://s.shopee.ph/AKTwXtmDCa',rating:4.8},
+        {id:26,title:'Outdoor Waterproof Sports Bag Unise',price:'269.00',image:'images/Sports/sportsbagformen.png',category:'Sports',affiliate:'https://s.shopee.ph/BNARrgVn7',rating:4.9},
+        {id:27,title:'Casual Dry fit T-shirts shorts terno set',price:'178.00',image:'images/Sports/sportsfitnesset.png',category:'Sports',affiliate:'https://s.shopee.ph/60KxPAJJ0H',rating:4.8},
+        {id:28,title:'Hawkwell Womens Knit Walking Shoes Running Shoes',price:'1,199.00',image:'images/Sports/womenrunningshoes.png',category:'Sports',affiliate:'https://s.shopee.ph/BNASpWuxm',rating:4.9},
+
+        // Toys
+        {id:29,title:'High Pressure Electric Water Gun For Kids',price:'319.00',image:'images/Toys/watergunforkids.png',category:'Toys',affiliate:'https://s.shopee.ph/6KxnqnQA5h',rating:4.8},
+        {id:30,title:'25pcs Building Blocks Toys for Kids',price:'179.00',image:'images/Toys/buildingblocsforkids.png',category:'Toys',affiliate:'https://s.shopee.ph/4fpZs5SugD',rating:4.8},
+        {id:31,title:'Cute Penguin Plush Toy for kids',price:'228.00',image:'images/Toys/plushtoysforkids.png',category:'Toys',affiliate:'https://s.shopee.ph/2g4VUb5UIB',rating:4.5},
+
+        // Top trending explicit group (kept at end so featured selection can prefer these)
+        {id:32,title:'Korean Style Sling Bag',price:'149.00',image:'images/toptrending/koreanbag.png',category:'TopTrending',affiliate:'https://s.shopee.ph/13h6lP99E',rating:4.8,topTrending:true},
+        {id:33,title:'Korean Sling Bag With Scarf',price:'129.00',image:'images/toptrending/slingbagwithscarf.png',category:'TopTrending',affiliate:'https://s.shopee.ph/5fi3rWHhyv',rating:4.8,topTrending:true},
+        {id:34,title:'Wireless Earphones Bluetooth Earpods',price:'198.00',image:'images/toptrending/wirelessearphones.png',category:'TopTrending',affiliate:'https://s.shopee.ph/4LCgHOrgTW',rating:4.9,topTrending:true},
+        {id:35,title:'Mini Fast Charging Powerbank',price:'189.00',image:'images/toptrending/minifastchargingpowerbank.png',category:'TopTrending',affiliate:'https://s.shopee.ph/9pXcpzbg0H',rating:4.8,topTrending:true},
+        {id:36,title:'Sensitive Skin Formula Serum',price:'165.00',image:'images/toptrending/sensitiveskinformulaserum.png',category:'TopTrending',affiliate:'https://s.shopee.ph/2LRbugtU8R',rating:4.9,topTrending:true},
+        {id:37,title:'Energy, Immune Wellness & Nutrient',price:'185.00',image:'images/toptrending/moringa.png',category:'TopTrending',affiliate:'https://s.shopee.ph/805ygR580S',rating:4.9,topTrending:true},
+        {id:38,title:'BLK tinted sunscreen stick',price:'719',image:'images/toptrending/tintedsunscreenstick.png',category:'TopTrending',affiliate:'https://s.shopee.ph/1VsUx9kvan',rating:4.9,topTrending:true},
+        {id:39,title:'Acrylic shoe box',price:'134.00',image:'images/toptrending/acrylicshoebox.png',category:'TopTrending',affiliate:'https://s.shopee.ph/9fECgj3DDq',rating:4.8,topTrending:true},
+        {id:40,title:'Kitchenware Silicone Shovel Spoon',price:'138.00',image:'images/toptrending/siliconeshovelspoon.png',category:'TopTrending',affiliate:'https://s.shopee.ph/7pmYWDrGXv',rating:4.9,topTrending:true},
+        {id:41,title:'Buy 1 Take 1 Baby Diapers',price:'231.00',image:'images/toptrending/babydiaper.png',category:'TopTrending',affiliate:'https://s.shopee.ph/30hIlng98D',rating:4.8,topTrending:true},
+        {id:42,title:'Antibacterial Cleansing Wipes',price:'174.00',image:'images/toptrending/cleansingwipes.png',category:'TopTrending',affiliate:'https://s.shopee.ph/20olaQiTwp',rating:4.9,topTrending:true},
+        {id:43,title:'URBAN PIPE Tshirt',price:'197.00',image:'images/toptrending/urbanpipetshirt.png',category:'TopTrending',affiliate:'https://s.shopee.ph/9zr37sUuzZ',rating:4.8,topTrending:true},
+        {id:44,title:'Vitamin C Whitening Serum',price:'139.00',image:'images/toptrending/whiteningserum.png',category:'TopTrending',affiliate:'https://s.shopee.ph/1qVLP4utT1',rating:4.8,topTrending:true},
+        {id:45,title:'RX Derm serums',price:'650.00',image:'images/toptrending/rxdermserum.png',category:'TopTrending',affiliate:'https://s.shopee.ph/9UumXPLIy0',rating:4.9,topTrending:true},
+        {id:46,title:'Mud Facial Mask/Bubble Mask',price:'152.00',image:'images/toptrending/bubblemask.png',category:'TopTrending',affiliate:'https://s.shopee.ph/8APOxIYbPl',rating:4.8,topTrending:true},
+        {id:47,title:'Soundcore Wireless Earphones',price:'1,457.00',image:'images/toptrending/soundcoreearphones.png',category:'TopTrending',affiliate:'https://s.shopee.ph/6KxkmIxJAq',rating:4.9,topTrending:true},
+    ];
+
+    function getQuery(){ return new URLSearchParams(location.search); }
+
+    function parsePriceValue(raw){
+      if(raw == null) return NaN;
+      // remove currency symbols and commas
+      const cleaned = String(raw).replace(/[^0-9.]/g, '');
+      const v = parseFloat(cleaned);
+      return isNaN(v) ? NaN : v;
+    }
+
+    function renderList(cat, searchQ){
+      const grid = document.getElementById('see-grid'); grid.innerHTML = '';
+      let list = products;
+      if (searchQ) {
+        const q = String(searchQ).toLowerCase();
+        list = products.filter(p => p.title.toLowerCase().includes(q) || p.category.toLowerCase().includes(q));
+        if (list.length === 0) {
+          document.getElementById('page-title').textContent = 'All products';
+          document.getElementById('page-note').textContent = `No products found for "${searchQ}".`;
+          // Show message, then all products
+          grid.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:32px 0;color:#c62828;font-weight:600;font-size:18px;">No products found for "' + searchQ + '".</div>';
+          products.forEach(p=>{
+            const art = document.createElement('article'); art.className = 'card';
+            const numericPrice = parsePriceValue(p.price);
+            art.dataset.price = isNaN(numericPrice) ? '' : String(numericPrice);
+            art.innerHTML = `\
+              <img loading="lazy" src="${p.image}" alt="${p.title}">\
+              <h3>${p.title}</h3>\
+              <p class="price">$${p.price}</p>\
+              <a class="btn" href="${p.affiliate}" target="_blank" rel="noopener noreferrer">View on Shopee</a>`;
+            grid.appendChild(art);
+          });
+          adjustGrid(products.length);
+          return;
+        } else {
+          document.getElementById('page-title').textContent = 'All products';
+          document.getElementById('page-note').textContent = `Showing ${list.length} result${list.length===1?'':'s'} for "${searchQ}".`;
+        }
+      } else if (cat) {
+        list = products.filter(p => String(p.category).toLowerCase() === String(cat).toLowerCase());
+        document.getElementById('page-title').textContent = cat ? (`All ${cat}`) : 'All products';
+        document.getElementById('page-note').textContent = cat ? (`Showing curated picks for ${cat}.`) : 'Showing all curated picks.';
+      } else {
+        document.getElementById('page-title').textContent = 'All products';
+        document.getElementById('page-note').textContent = 'Showing all curated picks.';
+      }
+      list.forEach(p=>{
+        const art = document.createElement('article'); art.className = 'card';
+        const numericPrice = parsePriceValue(p.price);
+        art.dataset.price = isNaN(numericPrice) ? '' : String(numericPrice);
+        art.innerHTML = `\
+          <img loading="lazy" src="${p.image}" alt="${p.title}">\
+          <h3>${p.title}</h3>\
+          <p class="price">$${p.price}</p>\
+          <a class="btn" href="${p.affiliate}" target="_blank" rel="noopener noreferrer">View on Shopee</a>`;
+        grid.appendChild(art);
+      });
+      // adjust grid layout for number of items (prevent oversized single-card)
+      adjustGrid(list.length);
+    }
+
+    // filter visible cards by title and optional price range
+    function filterList(q){
+      const cards = document.querySelectorAll('#see-grid .card');
+      const low = (q||'').trim().toLowerCase();
+      const minInput = document.getElementById('price-min');
+      const maxInput = document.getElementById('price-max');
+      const minVal = minInput && minInput.value !== '' ? parseFloat(minInput.value) : NaN;
+      const maxVal = maxInput && maxInput.value !== '' ? parseFloat(maxInput.value) : NaN;
+      let count = 0;
+      cards.forEach(c=>{
+        const titleEl = c.querySelector('h3');
+        const title = titleEl ? titleEl.textContent.toLowerCase() : '';
+        const priceNum = parseFloat(c.dataset.price) || NaN;
+        let visible = true;
+        if(low){ if(!title.includes(low)) visible = false; }
+        if(!isNaN(minVal) && !isNaN(priceNum)){
+          if(priceNum < minVal) visible = false;
+        }
+        if(!isNaN(maxVal) && !isNaN(priceNum)){
+          if(priceNum > maxVal) visible = false;
+        }
+        c.style.display = visible ? 'flex' : 'none';
+        if(visible) count++;
+      });
+      // adjust grid layout to match visible count
+      adjustGrid(count);
+      const note = document.getElementById('page-note');
+      if(note){
+        if(low || (!isNaN(minVal) || !isNaN(maxVal))){
+          note.textContent = `${count} result${count===1?'':'s'}` + (low ? ` for "${q}"` : '');
+        } else {
+          note.textContent = (new URLSearchParams(location.search).get('cat')) ? (`Showing curated picks for ${new URLSearchParams(location.search).get('cat')}.`) : 'Showing all curated picks.';
+        }
+      }
+    }
+
+    // prevent a single result from stretching full width
+    function adjustGrid(count){
+      const grid = document.getElementById('see-grid');
+      if(!grid) return;
+      if(count === 1){
+        grid.style.gridTemplateColumns = 'repeat(1, minmax(220px,420px))';
+        grid.style.maxWidth = '460px';
+        grid.style.margin = '0 auto';
+        grid.style.justifyItems = 'center';
+      } else if(count === 2){
+        grid.style.gridTemplateColumns = 'repeat(2, minmax(220px,420px))';
+        grid.style.maxWidth = '920px';
+        grid.style.margin = '0 auto';
+        grid.style.justifyItems = 'center';
+      } else {
+        grid.style.gridTemplateColumns = '';
+        grid.style.maxWidth = '';
+        grid.style.margin = '';
+        grid.style.justifyItems = '';
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', ()=>{
+      const qs = getQuery();
+      const cat = qs.get('cat');
+      const searchQ = qs.get('q');
+      renderList(cat, searchQ);
+      const search = document.getElementById('see-search');
+      const minInput = document.getElementById('price-min');
+      const maxInput = document.getElementById('price-max');
+      // debounce helper
+      function debounce(fn, wait=180){ let t; return (...a)=>{ clearTimeout(t); t=setTimeout(()=>fn(...a), wait); }; }
+      const applyFilter = ()=>{ const q = search ? search.value : ''; filterList(q); };
+      if(search){ search.addEventListener('input', debounce((e)=>{ applyFilter(); }, 180)); }
+      if(minInput) minInput.addEventListener('input', debounce(applyFilter, 180));
+      if(maxInput) maxInput.addEventListener('input', debounce(applyFilter, 180));
+      // apply any existing search/filter state
+      applyFilter();
+    });
+  </script>
+</body>
+</html>

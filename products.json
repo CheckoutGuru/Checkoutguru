@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Wireless Earbuds",
+    "price": "19.99",
+    "image": "images/sample1.jpg",
+    "category": "Electronics",
+    "section": "featured",
+    "affiliate": "https://shopee.example/affiliate-link-1"
+  },
+  {
+    "id": 2,
+    "title": "Kitchen Knife Set",
+    "price": "29.99",
+    "image": "images/sample2.jpg",
+    "category": "Home",
+    "section": "regular",
+    "affiliate": "https://shopee.example/affiliate-link-2"
+  },
+  {
+    "id": 3,
+    "title": "Casual T-Shirt",
+    "price": "9.99",
+    "image": "images/sample3.jpg",
+    "category": "Fashion",
+    "section": "regular",
+    "affiliate": "https://shopee.example/affiliate-link-3"
+  },
+  {
+    "id": 4,
+    "title": "Smart Fitness Band",
+    "price": "24.99",
+    "image": "images/sample2.jpg",
+    "category": "Electronics",
+    "section": "featured",
+    "affiliate": "https://shopee.example/affiliate-link-4"
+  },
+  {
+    "id": 5,
+    "title": "Stylish Backpack",
+    "price": "34.99",
+    "image": "images/sample3.jpg",
+    "category": "Fashion",
+    "section": "featured",
+    "affiliate": "https://shopee.example/affiliate-link-5"
+  },
+  {
+    "id": 6,
+    "title": "Ceramic Mug",
+    "price": "6.99",
+    "image": "images/sample1.jpg",
+    "category": "Home",
+    "section": "regular",
+    "affiliate": "https://shopee.example/affiliate-link-6"
+  }
+]

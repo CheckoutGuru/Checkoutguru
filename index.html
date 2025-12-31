@@ -1,0 +1,727 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Check Out Guru — Shopee Picks</title>
+  <meta name="description" content="Curated Shopee deals and affiliate links.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-bg" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="container header-grid">
+      <div class="brand">
+        <div class="partnered">
+          <span class="partnered-prefix">Partnered with</span>
+          <div class="partners">
+            <span class="partner">Shopee</span>
+          </div>
+        </div>
+        <div class="brand-head">
+          <img src="logo/cguru.png" alt="" class="site-logo">
+          <div>
+            <h1 class="logo">Check Out Guru</h1>
+            <p class="tag">Curated Shopee deals • Trusted picks</p>
+          </div>
+        </div>
+      </div>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+
+      <div class="search-area">
+        <form id="search-form" class="search-form" onsubmit="return false;">
+          <input id="search-input" class="search-input" type="search" placeholder="Search products or categories..." aria-label="Search products">
+          <button id="search-btn" class="search-btn" type="submit">Search</button>
+        </form>
+      </div>
+
+      <div class="social-only" aria-hidden="false">
+        <div class="follow-label">Follow us</div>
+        <div class="social-links" aria-label="Follow us">
+          <a class="social-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" fill="currentColor"/>
+            </svg>
+          </a>
+          <a class="social-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="Follow us on TikTok">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M12 3v12.5a3.5 3.5 0 1 1-3.5-3.5V7.2a6 6 0 0 0 3.5-1.2z" fill="currentColor"/>
+              <path d="M17 7.5a4 4 0 0 1-4-4v-.5h2a2 2 0 0 0 2 2v2.5z" fill="currentColor" opacity="0.9"/>
+            </svg>
+          </a>
+          <a class="social-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5" ry="5" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <circle cx="12" cy="12" r="3" fill="currentColor"/>
+              <circle cx="17.5" cy="6.5" r="0.7" fill="currentColor"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="category-bar" class="category-bar" aria-label="Categories">
+      <!-- Category buttons injected here -->
+    </div>
+  </header>
+
+  <main class="container" id="main-container">
+    <section class="announcement" aria-hidden="false">
+      <div class="container">
+        <p class="announce-text"><strong>Our mission:</strong> We help consumers buy the best-quality items with strong reviews and star ratings to avoid scams. We examine product quality, manufacturers and sellers so you can find the best products possible.</p>
+      </div>
+    </section>
+    <section class="banner-section" aria-label="Top banner">
+      <div class="container">
+        <div class="banner-carousel" aria-live="polite">
+          <div class="banner-track">
+          <a class="site-banner banner-slide" href="https://s.shopee.ph/8V2DdFBSde" target="_blank" rel="noopener noreferrer" aria-label="Top promotion banner">
+            <picture>
+              <img src="banner/bannerheadset2.png" alt="Top promotion banner" loading="eager">
+            </picture>
+            <div class="banner-badge">Item of the Month</div>
+          </a>
+          <!-- Sample additional banners (4) -->
+          <a class="site-banner banner-slide" href="https://s.shopee.ph/2B8AQY0ejX" target="_blank" rel="noopener noreferrer">
+            <picture>
+              <img src="banner/dogfood.png" alt="Limited offer banner" loading="lazy">
+            </picture>
+            <div class="banner-badge">Limited Offer</div>
+          </a>
+
+          <a class="site-banner banner-slide" href="https://s.shopee.ph/3fwyDrJVF5" target="_blank" rel="noopener noreferrer">
+            <picture>
+              <img src="banner/concealer.png" alt="Flash sale banner" loading="lazy">
+            </picture>
+            <div class="banner-badge">Flash Sale</div>
+          </a>
+
+          <a class="site-banner banner-slide" href="https://s.shopee.ph/9KbLXtZalT" target="_blank" rel="noopener noreferrer">
+            <picture>
+              <img src="banner/kettle.png" alt="Free shipping banner" loading="lazy">
+            </picture>
+            <div class="banner-badge">Free Shipping</div>
+          </a>
+
+          <a class="site-banner banner-slide" href="https://s.shopee.ph/8fLenTpmVd" target="_blank" rel="noopener noreferrer">
+            <picture>
+              <img src="banner/redmiwatch.png" alt="New arrival banner" loading="lazy">
+            </picture>
+            <div class="banner-badge">New Arrival</div>
+          </a>
+          </div>
+        </div>
+        <button class="banner-prev" aria-label="Previous banner">‹</button>
+        <button class="banner-next" aria-label="Next banner">›</button>
+      </div>
+    </section>
+    <!-- Hero slider removed -->
+    <section class="text-marquee" aria-label="Promotions marquee">
+      <div class="marquee-row">
+        <div class="marquee-track">
+          <div class="marquee-content">
+            <a class="marquee-item" href="#">Hot Deals</a>
+            <a class="marquee-item" href="#">Super Sale</a>
+            <a class="marquee-item" href="#">Big Discount</a>
+            <a class="marquee-item" href="#">Limited Time</a>
+            <a class="marquee-item" href="#">Clearance</a>
+            <a class="marquee-item" href="#">Flash Offer</a>
+            <a class="marquee-item" href="#">Buy 1 Get 1</a>
+            <a class="marquee-item" href="#">Free Shipping</a>
+            <a class="marquee-item" href="#">Best Seller</a>
+            <a class="marquee-item" href="#">New Arrival</a>
+            <a class="marquee-item" href="#">Price Drop</a>
+            <a class="marquee-item" href="#">Deal of the Day</a>
+            <a class="marquee-item" href="#">Member Exclusive</a>
+          </div>
+          <div class="marquee-content">
+            <a class="marquee-item" href="#">Hot Deals</a>
+            <a class="marquee-item" href="#">Super Sale</a>
+            <a class="marquee-item" href="#">Big Discount</a>
+            <a class="marquee-item" href="#">Limited Time</a>
+            <a class="marquee-item" href="#">Clearance</a>
+            <a class="marquee-item" href="#">Flash Offer</a>
+            <a class="marquee-item" href="#">Buy 1 Get 1</a>
+            <a class="marquee-item" href="#">Free Shipping</a>
+            <a class="marquee-item" href="#">Best Seller</a>
+            <a class="marquee-item" href="#">New Arrival</a>
+            <a class="marquee-item" href="#">Price Drop</a>
+            <a class="marquee-item" href="#">Deal of the Day</a>
+            <a class="marquee-item" href="#">Member Exclusive</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="featured-section featured-strong">
+      <h2>Top trending products</h2>
+      <p class="featured-note">These items are tested and selected for high-quality materials and reliability.<br/>These are the products with star 4.8 – 4.9 ratings .</p>
+      <div id="featured" class="featured-grid" aria-hidden="false"></div>
+      <div class="see-more"><a class="see-more-btn" href="see-more.html?cat=TopTrending">See more Top trending</a></div>
+    </section>
+
+    <section class="product-section" id="sec-beauty">
+      <h2>Beauty</h2>
+      <p class="section-note beauty-note">Beauty picks vetted for ingredients, safety and results.</p>
+        <div class="beauty-layout">
+        <a class="beauty-banner-link" href="https://s.shopee.ph/1VsUx9kvan" target="_blank" rel="noopener noreferrer" aria-label="Beauty picks banner">
+          <div class="beauty-banner" style="background-image:url('banner/blk.png');" aria-hidden="true"></div>
+        </a>
+        <div class="beauty-grid grid" id="grid-beauty"></div>
+      </div>
+      <div class="see-more"><a class="see-more-btn" href="see-more.html?cat=Beauty">See more Beauty</a></div>
+    </section>
+
+    <section class="product-section" id="sec-electronics">
+      <h2>Electronics</h2>
+      <p class="section-note electronics-note">Electronics shown here are selected for durability and strong user reviews.</p>
+      <div class="grid" id="grid-electronics"></div>
+      <div class="see-more"><a class="see-more-btn" href="see-more.html?cat=Electronics">See more Electronics</a></div>
+    </section>
+
+    <section class="product-section" id="sec-home">
+      <h2>Home</h2>
+      <p class="section-note home-note">Home picks focus on functional design and durable materials.</p>
+      <div class="grid" id="grid-home"></div>
+      <div class="see-more"><a class="see-more-btn" href="see-more.html?cat=Home">See more Home picks</a></div>
+
+      <div class="home-bottom-banner" aria-hidden="false">
+        <a href="https://s.shopee.ph/9KbLXtZalT" target="_blank" rel="noopener noreferrer" aria-label="Home picks banner">
+          <picture>
+            <img src="banner/kettle2.png" alt="Home picks banner" loading="lazy">
+          </picture>
+        </a>
+      </div>
+    </section>
+
+    <section class="product-section" id="sec-fashion">
+      <h2>Fashion</h2>
+      <p class="section-note fashion-note">Fashion items selected for style, comfort, and good value.</p>
+      <div class="grid" id="grid-fashion"></div>
+      <div class="see-more"><a class="see-more-btn" href="see-more.html?cat=Fashion">See more Fashion</a></div>
+    </section>
+
+    <section class="product-section" id="sec-sports">
+      <h2>Sports</h2>
+      <p class="section-note sports-note">Sports gear chosen for performance, durability and comfort.</p>
+      <div class="grid" id="grid-sports"></div>
+      <div class="see-more"><a class="see-more-btn" href="see-more.html?cat=Sports">See more Sports gear</a></div>
+    </section>
+
+    <section class="product-section" id="sec-toys">
+      <div class="toys-top-banner" aria-hidden="false">
+        <a href="https://s.shopee.ph/8fLenTpmVd" target="_blank" rel="noopener noreferrer" aria-label="Toys banner">
+          <picture>
+            <img src="banner/redmiwatch2.png" alt="Toys picks banner" loading="lazy">
+          </picture>
+        </a>
+      </div>
+      <h2>Toys</h2>
+      <p class="section-note toys-note">Toys selected for safety, learning value and lasting play.</p>
+      <div class="grid" id="grid-toys"></div>
+      <div class="see-more"><a class="see-more-btn" href="see-more.html?cat=Toys">See more Toys</a></div>
+    </section>
+
+    <script>
+      // Inline product data (no external JSON) - grouped by site sections
+      const products = [
+        // Electronics
+        {id:1,title:'Soundcore Wireless Earphones',price:'1,457.00',image:'images/toptrending/soundcoreearphones.png',category:'Electronics',affiliate:'https://s.shopee.ph/6KxkmIxJAq',rating:4.9},
+        {id:2,title:'Anker R50i True Wireless Earbuds',price:'725.00',image:'images/Electronics/wirelessearbuds.png',category:'Electronics',affiliate:'https://s.shopee.ph/2B8C2l3NKr',rating:4.9},
+        {id:3,title:'USB-C Fast Charging Type C',price:'228',image:'images/Electronics/usbtypecfastcharging.png',category:'Electronics',affiliate:'https://s.shopee.ph/10wEesutrk',rating:4.9},
+        {id:4,title:'Portable Wireless Bluetooth Speaker',price:'283.00',image:'images/Electronics/portablebluetoothspeaker.png',category:'Electronics',affiliate:'https://s.shopee.ph/1VsVG7pJmL',rating:4.8},
+        {id:5,title:'Mechanical Gaming Keyboard RGB',price:'1,156.00',image:'images/Electronics/mechanicalkeyboard.png',category:'Electronics',affiliate:'https://s.shopee.ph/9KbManRlAY',rating:4.9},
+
+        // Home
+        {id:6,title:'Acrylic shoes rack transparent box',price:'249.00',image:'images/Home/acrelicshowrack.png',category:'Home',affiliate:'https://s.shopee.ph/VzzPvJSTf',rating:4.8},
+        {id:7,title:'Tool Box Heavy Duty Plastic Tool Storage Box',price:'219.00',image:'images/Home/toolbox.png',category:'Home',affiliate:'https://s.shopee.ph/7pmaF0g4TQ',rating:4.8},
+        {id:8,title:'Air Fryer – Efficient, Compact Design for Fast',price:'2,654.00',image:'images/Home/airfryer.png',category:'Home',affiliate:'https://s.shopee.ph/6AeMGSDUVl',rating:5.0},
+        {id:9,title:'Enolux F5 Robot Vacuum Cleaner ',price:'2,960.00',image:'images/Home/robotvacuumcleaner.png',category:'Home',affiliate:'https://s.shopee.ph/6facrsx0ls',rating:5.0},
+        {id:10,title:'Garterized 4 in 1 Korea Cotton Bedding Set',price:'469.00',image:'images/Home/koreacottonbedding.png',category:'Home',affiliate:'https://s.shopee.ph/VzzYI8pO4',rating:4.8},
+        {id:11,title:'4 in 1 Bedding Set with Pillowcase Comforter',price:'472.00',image:'images/Home/beddingsetwithpillowcase.png',category:'Home',affiliate:'https://s.shopee.ph/2LRdjotcE0',rating:4.8},
+        {id:48,title:'Black Metal Wall Decor Iron Plants',price:'329.00',image:'images/Home/walldecorironplants.png',category:'Home',affiliate:'https://s.shopee.ph/6AeMK3E9fk',rating:4.9},
+        {id:49,title:'Aesthetic Minimalist Rose Flower Wall Decor',price:'149.00',image:'images/Home/roseflowerdecor.png',category:'Home',affiliate:'https://s.shopee.ph/10wGAg94im',rating:4.8},
+        
+        
+
+        // Fashion
+        {id:13,title:'Sunny&Co One shoulder top maxi dress',price:'218.00',image:'images/Fashion/maxidressfloral.png',category:'Fashion',affiliate:'https://s.shopee.ph/3B0kncxzox',rating:4.8},
+        {id:14,title:'Spaghetti Strap Maxi Dress for Women',price:'169.00',image:'images/Fashion/spaghettimaxidress.png',category:'Fashion',affiliate:'https://s.shopee.ph/3fx1PCmolf',rating:4.8},
+        {id:15,title:'Anti Radiation For Kids Eyeglasses Photochromic Glasses',price:'185.00',image:'images/Fashion/antiradiationglasses.png',category:'Fashion',affiliate:'https://s.shopee.ph/5AlpCxzvEn',rating:4.9},
+        {id:16,title:'Anti Radiation Eyeglass For Woman And Men',price:'165.00',image:'images/Fashion/antiradglassesformenandwomen.png',category:'Fashion',affiliate:'https://s.shopee.ph/AAAVAJMUEb',rating:4.8},
+        {id:17,title:'French Court Style Puff Sleeves',price:'343.00',image:'images/Fashion/puffsleeves.png',category:'Fashion',affiliate:'https://s.shopee.ph/20onRcmrlA',rating:4.8},
+        {id:52,title:'Unisex Plain Oversized T-shirt',price:'214.00',image:'images/Fashion/oversizetshirt.png',category:'Fashion',affiliate:'https://s.shopee.ph/BNAPhURGW',rating:4.8},
+        {id:53,title:'Athleisure Women Activewear',price:'270.00',image:'images/Fashion/womenactivewear.png',category:'Fashion',affiliate:'https://s.shopee.ph/9zr681sjCE',rating:4.9},
+        {id:54,title:'hoodie for men hip hop trend',price:'229.00',image:'images/Fashion/zipperhoddie.png',category:'Fashion',affiliate:'https://s.shopee.ph/5L5GZmVdDN',rating:4.9},
+
+
+        // Beauty
+        {id:18,title:'Garnier Vitamin C Serum Cleanser Foam Wash',price:'375.00',image:'images/Beauty/garnierserum.png',category:'Beauty',affiliate:'https://s.shopee.ph/1qVLYnjsbX',rating:4.9},
+        {id:19,title:'Lip Tint Waterproof Matte Finish',price:'195.00',image:'images/Beauty/waterliptint.png',category:'Beauty',affiliate:'https://s.shopee.ph/4LCgZKhut0',rating:4.9},
+        {id:20,title:'Charming Perfume For Men',price:'104.00',image:'images/Beauty/bravemanperfume.png',category:'Beauty',affiliate:'https://s.shopee.ph/Vzy0ZvHvq',rating:4.8},
+        {id:21,title:'Garnier 4PC Vitamin C Brightening Kit',price:'749.00',image:'images/Beauty/4pcbrighteningkit.png',category:'Beauty',affiliate:'https://s.shopee.ph/9fECtUpcHb',rating:4.9},
+        {id:22,title:'PURE SEDUCTION 236ml Perfume',price:'144.00',image:'images/Beauty/perfumeforwomen.png',category:'Beauty',affiliate:'https://s.shopee.ph/qcoPepSDZ',rating:4.9},
+        {id:23,title:'Blackheads Removal Mask Deep Cleansing',price:'179.00',image:'images/Beauty/blackheadremovalmask.png',category:'Beauty',affiliate:'https://s.shopee.ph/4fpWyzmdHh',rating:4.9},
+        {id:24,title:'DAZZLE ME Ink-Gloss Lip Tint',price:'272.00',image:'images/Beauty/dazzlemelipgloss.png',category:'Beauty',affiliate:'https://s.shopee.ph/4AtGLpWEWi',rating:4.8},
+        {id:50,title:'Bio-Collagen Real Deep Mask',price:'269.00',image:'images/Beauty/collagenmask.png',category:'Beauty',affiliate:'https://s.shopee.ph/7pmYlB1ABO',rating:5.0},
+        {id:51,title:'Makeup Setting Spray Matte Fix 60ml',price:'179.00',image:'images/Beauty/settingspray.png',category:'Beauty',affiliate:'https://s.shopee.ph/1BFepDjOXR',rating:4.9},
+
+        // Sports
+        {id:25,title:'Sports Chest Bag School Student Backpack',price:'259.00',image:'images/Sports/sportsbags.png',category:'Sports',affiliate:'https://s.shopee.ph/AKTwXtmDCa',rating:4.8},
+        {id:26,title:'Outdoor Waterproof Sports Bag Unise',price:'269.00',image:'images/Sports/sportsbagformen.png',category:'Sports',affiliate:'https://s.shopee.ph/BNARrgVn7',rating:4.9},
+        {id:27,title:'Casual Dry fit T-shirts shorts terno set',price:'178.00',image:'images/Sports/sportsfitnesset.png',category:'Sports',affiliate:'https://s.shopee.ph/60KxPAJJ0H',rating:4.8},
+        {id:28,title:'Hawkwell Womens Knit Walking Shoes Running Shoes',price:'1,199.00',image:'images/Sports/womenrunningshoes.png',category:'Sports',affiliate:'https://s.shopee.ph/BNASpWuxm',rating:4.9},
+
+        // Toys
+        {id:29,title:'High Pressure Electric Water Gun For Kids',price:'319.00',image:'images/Toys/watergunforkids.png',category:'Toys',affiliate:'https://s.shopee.ph/6KxnqnQA5h',rating:4.8},
+        {id:30,title:'25pcs Building Blocks Toys for Kids',price:'179.00',image:'images/Toys/buildingblocsforkids.png',category:'Toys',affiliate:'https://s.shopee.ph/4fpZs5SugD',rating:4.8},
+        {id:31,title:'Cute Penguin Plush Toy for kids',price:'228.00',image:'images/Toys/plushtoysforkids.png',category:'Toys',affiliate:'https://s.shopee.ph/2g4VUb5UIB',rating:4.5},
+
+        // Top trending explicit group (kept at end so featured selection can prefer these)
+        {id:32,title:'Korean Style Sling Bag',price:'149.00',image:'images/toptrending/koreanbag.png',category:'TopTrending',affiliate:'https://s.shopee.ph/13h6lP99E',rating:4.8,topTrending:true},
+        {id:33,title:'Korean Sling Bag With Scarf',price:'129.00',image:'images/toptrending/slingbagwithscarf.png',category:'TopTrending',affiliate:'https://s.shopee.ph/5fi3rWHhyv',rating:4.8,topTrending:true},
+        {id:34,title:'Wireless Earphones Bluetooth Earpods',price:'198.00',image:'images/toptrending/wirelessearphones.png',category:'TopTrending',affiliate:'https://s.shopee.ph/4LCgHOrgTW',rating:4.9,topTrending:true},
+        {id:35,title:'Mini Fast Charging Powerbank',price:'189.00',image:'images/toptrending/minifastchargingpowerbank.png',category:'TopTrending',affiliate:'https://s.shopee.ph/9pXcpzbg0H',rating:4.8,topTrending:true},
+        {id:36,title:'Sensitive Skin Formula Serum',price:'165.00',image:'images/toptrending/sensitiveskinformulaserum.png',category:'TopTrending',affiliate:'https://s.shopee.ph/2LRbugtU8R',rating:4.9,topTrending:true},
+        {id:37,title:'Energy, Immune Wellness & Nutrient',price:'185.00',image:'images/toptrending/moringa.png',category:'TopTrending',affiliate:'https://s.shopee.ph/805ygR580S',rating:4.9,topTrending:true},
+        {id:38,title:'BLK tinted sunscreen stick',price:'719',image:'images/toptrending/tintedsunscreenstick.png',category:'TopTrending',affiliate:'https://s.shopee.ph/1VsUx9kvan',rating:4.9,topTrending:true},
+        {id:39,title:'Acrylic shoe box',price:'134.00',image:'images/toptrending/acrylicshoebox.png',category:'TopTrending',affiliate:'https://s.shopee.ph/9fECgj3DDq',rating:4.8,topTrending:true},
+        {id:40,title:'Kitchenware Silicone Shovel Spoon',price:'138.00',image:'images/toptrending/siliconeshovelspoon.png',category:'TopTrending',affiliate:'https://s.shopee.ph/7pmYWDrGXv',rating:4.9,topTrending:true},
+        {id:41,title:'Buy 1 Take 1 Baby Diapers',price:'231.00',image:'images/toptrending/babydiaper.png',category:'TopTrending',affiliate:'https://s.shopee.ph/30hIlng98D',rating:4.8,topTrending:true},
+        {id:42,title:'Antibacterial Cleansing Wipes',price:'174.00',image:'images/toptrending/cleansingwipes.png',category:'TopTrending',affiliate:'https://s.shopee.ph/20olaQiTwp',rating:4.9,topTrending:true},
+        {id:43,title:'URBAN PIPE Tshirt',price:'197.00',image:'images/toptrending/urbanpipetshirt.png',category:'TopTrending',affiliate:'https://s.shopee.ph/9zr37sUuzZ',rating:4.8,topTrending:true},
+        {id:44,title:'Vitamin C Whitening Serum',price:'139.00',image:'images/toptrending/whiteningserum.png',category:'TopTrending',affiliate:'https://s.shopee.ph/1qVLP4utT1',rating:4.8,topTrending:true},
+        {id:45,title:'RX Derm serums',price:'650.00',image:'images/toptrending/rxdermserum.png',category:'TopTrending',affiliate:'https://s.shopee.ph/9UumXPLIy0',rating:4.9,topTrending:true},
+        {id:46,title:'Mud Facial Mask/Bubble Mask',price:'152.00',image:'images/toptrending/bubblemask.png',category:'TopTrending',affiliate:'https://s.shopee.ph/8APOxIYbPl',rating:4.8,topTrending:true},
+        {id:47,title:'Soundcore Wireless Earphones',price:'1,457.00',image:'images/toptrending/soundcoreearphones.png',category:'TopTrending',affiliate:'https://s.shopee.ph/6KxkmIxJAq',rating:4.9,topTrending:true},
+      ];
+
+      function render(query=''){
+        const map = {
+          'Electronics':'grid-electronics',
+          'Home':'grid-home',
+          'Fashion':'grid-fashion',
+          'Beauty':'grid-beauty',
+          'Sports':'grid-sports',
+          'Toys':'grid-toys'
+        };
+        // clear all grids
+        Object.values(map).forEach(id=>{ const el = document.getElementById(id); if(el) el.innerHTML=''; });
+        const featuredEl = document.getElementById('featured'); if(featuredEl) featuredEl.innerHTML='';
+
+        // determine filter: query can be string (search or single category) or array (categories)
+        const allCategories = Array.from(new Set(products.map(p=>p.category))).map(s=>s.toLowerCase());
+        let categoriesFilter = null;
+        let q = '';
+        if(Array.isArray(query)){
+          categoriesFilter = query.map(s=>String(s).toLowerCase());
+        } else if(query){
+          const s = String(query).toLowerCase();
+          if(allCategories.includes(s)) categoriesFilter = [s]; else q = s;
+        }
+
+        // render products into their sections; if categoriesFilter is set, dim non-selected items instead of hiding sections
+        const counters = {};
+        const appendedIds = new Set();
+        products.forEach(p=>{
+          const pCat = p.category.toLowerCase();
+          const el = document.getElementById(map[p.category]);
+          if(!el) return;
+          const art = document.createElement('article');
+          // special styling for Electronics cards
+          if(p.category === 'Electronics') art.className='card electronics'; else art.className='card';
+          const isDim = categoriesFilter && !categoriesFilter.includes(pCat);
+          // if search query exists and doesn't match, mark as dim as well
+          const doesMatchQuery = !q || p.title.toLowerCase().includes(q) || p.category.toLowerCase().includes(q);
+          if(isDim || !doesMatchQuery) art.classList.add('dim');
+          // build card content; electronics get a chosen-badge and star rating
+          let content = `\
+            <img loading="lazy" src="${p.image}" alt="${p.title}">\
+            <h3>${p.title}</h3>`;
+          // render rating block for all cards (show empty stars when no rating available)
+          let ratingHtml = '';
+          if(typeof p.rating === 'number'){
+            const r = Math.round(p.rating*2)/2;
+            let out = '';
+            for(let s=1;s<=5;s++){
+              if(r>=s) out += '<span class="star">★</span>';
+              else if(r + 0.5 === s) out += '<span class="star half">☆</span>';
+              else out += '<span class="star empty">☆</span>';
+            }
+            ratingHtml = `<div class="rating">${out}<span class="rating-value">${p.rating.toFixed(1)}</span></div>`;
+          } else {
+            let out = '';
+            for(let s=1;s<=5;s++) out += '<span class="star empty">☆</span>';
+            ratingHtml = `<div class="rating">${out}</div>`;
+          }
+          if(p.category === 'Electronics'){
+            content += `<div class="chosen-badge">Chosen — good reviews</div>`;
+          }
+          content += ratingHtml;
+          content += `\
+            <p class="price">P${p.price}</p>\
+            <a class="btn" href="${p.affiliate}" target="_blank" rel="noopener noreferrer">View on Shopee</a>`;
+          art.innerHTML = content;
+          // set data attributes for modal/tracking
+          art.dataset.id = p.id;
+          art.dataset.title = p.title;
+          art.dataset.price = p.price;
+          art.dataset.image = p.image;
+          art.dataset.affiliate = p.affiliate;
+          // enforce per-section limits (we'll cap Home later but still collect primary items)
+          const catKey = p.category;
+          counters[catKey] = counters[catKey] || 0;
+          // append primary matching items (no fillers yet)
+          el.appendChild(art);
+          appendedIds.add(String(p.id));
+          counters[catKey]++;
+        });
+
+        // If Home has fewer than 6 items, fill with other products (excluding duplicates)
+        const homeEl = document.getElementById('grid-home');
+        const homeCount = counters['Home'] || 0;
+        if(homeEl && homeCount < 6){
+          const need = 6 - homeCount;
+          for(const p of products){
+            if(need <= 0) break;
+            if(p.category === 'Home') continue; // already counted
+            if(appendedIds.has(String(p.id))) continue;
+            // create same article markup as above
+            const art = document.createElement('article');
+            if(p.category === 'Electronics') art.className='card electronics'; else art.className='card';
+            const isDim = categoriesFilter && !categoriesFilter.includes(p.category.toLowerCase());
+            const doesMatchQuery = !q || p.title.toLowerCase().includes(q) || p.category.toLowerCase().includes(q);
+            if(isDim || !doesMatchQuery) art.classList.add('dim');
+            let content = `\
+              <img loading="lazy" src="${p.image}" alt="${p.title}">\
+              <h3>${p.title}</h3>`;
+            // render rating block for all cards (show empty stars when no rating available)
+            let ratingHtml = '';
+            if(typeof p.rating === 'number'){
+              const r = Math.round(p.rating*2)/2;
+              let out = '';
+              for(let s=1;s<=5;s++){
+                if(r>=s) out += '<span class="star">★</span>';
+                else if(r + 0.5 === s) out += '<span class="star half">☆</span>';
+                else out += '<span class="star empty">☆</span>';
+              }
+              ratingHtml = `<div class="rating">${out}<span class="rating-value">${p.rating.toFixed(1)}</span></div>`;
+            } else {
+              let out = '';
+              for(let s=1;s<=5;s++) out += '<span class="star empty">☆</span>';
+              ratingHtml = `<div class="rating">${out}</div>`;
+            }
+            if(p.category === 'Electronics'){
+              content += `<div class="chosen-badge">Chosen — good reviews</div>`;
+            }
+            content += ratingHtml;
+            content += `\
+              <p class="price">P${p.price}</p>\
+              <a class="btn" href="${p.affiliate}" target="_blank" rel="noopener noreferrer">View on Shopee</a>`;
+            art.innerHTML = content;
+            art.dataset.id = p.id; art.dataset.title = p.title; art.dataset.price = p.price; art.dataset.image = p.image; art.dataset.affiliate = p.affiliate;
+            homeEl.appendChild(art);
+            appendedIds.add(String(p.id));
+            // decrement need
+            need--;
+          }
+        }
+
+        // featured: prefer explicit `topTrending` items; otherwise fall back to last 16 entries
+        let featuredList = products.filter(p => p.topTrending);
+        if(!featuredList || featuredList.length === 0){
+          featuredList = products.slice(-16);
+        }
+        featuredList = featuredList
+          .map(p=> ({...p, _rating: typeof p.rating === 'number' ? p.rating : 4.0 }))
+          .slice(0,16)
+          .reverse(); // newest first
+
+          // populate section-level badges for items rated 4.8 - 4.9 (top-right of section)
+          const badgesEl = document.getElementById('featured-badges');
+          if(badgesEl) badgesEl.innerHTML = '';
+          const badgeItems = featuredList.filter(p=> p._rating >= 4.8 && p._rating <= 4.9);
+          if(badgeItems.length && badgesEl){
+            badgesEl.innerHTML = badgeItems.map(p=> `\
+              <a class="section-badge" href="${p.affiliate}" target="_blank" rel="noopener noreferrer" title="${p.title}">\
+                <span class="star">★</span><span class="rate">${p._rating.toFixed(1)}</span>\
+              </a>`).join('');
+          }
+
+        featuredList.forEach(p=>{
+          const pCat = p.category.toLowerCase();
+          const card = document.createElement('div'); card.className='featured-card';
+          const isDim = categoriesFilter && !categoriesFilter.includes(pCat);
+          const doesMatchQuery = !q || p.title.toLowerCase().includes(q) || p.category.toLowerCase().includes(q);
+          if(isDim || !doesMatchQuery) card.classList.add('dim');
+
+          // build star rating for featured item
+          const rating = Math.round((p._rating || 4.0) * 2) / 2;
+          let starsHtml = '';
+          for(let s=1;s<=5;s++){
+            if(rating >= s) starsHtml += '<span class="star">★</span>';
+            else if(rating + 0.5 === s) starsHtml += '<span class="star half">☆</span>';
+            else starsHtml += '<span class="star empty">☆</span>';
+          }
+
+          const topBadge = (p._rating >= 4.9) ? '<div class="top-rated">4.9★</div>' : '<div class="top-rated">4.8★</div>';
+
+          card.innerHTML = `\
+            <a href="${p.affiliate}" target="_blank" rel="noopener noreferrer">\
+              <div class="featured-img" style="background-image:url('${p.image}')" aria-hidden="true"></div>\
+              ${topBadge}\
+              <div class="featured-body">\
+                <h3>${p.title}</h3>\
+                <div class="featured-rating">${starsHtml}<span class="rating-value">${p._rating.toFixed(1)}</span></div>\
+                <p class="price">P${p.price}</p>\
+              </div>\
+            </a>`;
+          // attach data attributes on the featured card container for modal
+          card.dataset.id = p.id;
+          card.dataset.title = p.title;
+          card.dataset.price = p.price;
+          card.dataset.image = p.image;
+          card.dataset.affiliate = p.affiliate;
+          featuredEl.appendChild(card);
+        });
+      }
+
+      // Sections are inlined in the main HTML; no dynamic loading required.
+
+      // debounce helper
+      function debounce(fn, wait=220){
+        let t;
+        return function(...args){ clearTimeout(t); t = setTimeout(()=>fn.apply(this,args), wait); };
+      }
+
+      document.addEventListener('DOMContentLoaded', ()=>{
+        const input = document.getElementById('search-input');
+        // sections are already present in the HTML
+        const form = document.getElementById('search-form');
+        const catBar = document.getElementById('category-bar');
+
+        // build category buttons
+        const cats = Array.from(new Set(products.map(p=>p.category)));
+        function makeBtn(label){
+          const b = document.createElement('button');
+          b.type='button'; b.className='category-btn'; b.textContent = label; b.dataset.cat = label;
+          return b;
+        }
+        const allBtn = makeBtn('All'); allBtn.classList.add('active'); catBar.appendChild(allBtn);
+        cats.forEach(c=> catBar.appendChild(makeBtn(c)));
+
+        // click handling (single-select)
+        catBar.addEventListener('click', (e)=>{
+          const btn = e.target.closest('button'); if(!btn) return;
+          const cat = btn.dataset.cat;
+          const allBtn = catBar.querySelector('.category-btn[data-cat="All"]');
+          // clear previous selection
+          catBar.querySelectorAll('.category-btn').forEach(b=>b.classList.remove('active'));
+          if(cat === 'All'){
+            btn.classList.add('active');
+            render('');
+            return;
+          }
+          // set this as active
+          btn.classList.add('active');
+          // clear search input when selecting category
+          input.value = '';
+          render(cat);
+          // smooth scroll to the section
+          let sectionId;
+          if (cat === 'TopTrending') {
+            // The Top Trending section uses a different structure
+            sectionId = 'featured';
+          } else {
+            sectionId = 'sec-' + cat.toLowerCase();
+          }
+          const sec = document.getElementById(sectionId);
+          if(sec) sec.scrollIntoView({behavior:'smooth',block:'start'});
+        });
+
+        render();
+        form.addEventListener('submit', (e)=>{
+          e.preventDefault();
+          const q = input.value.trim();
+          if(q) {
+            window.location.href = `see-more.html?q=${encodeURIComponent(q)}`;
+          } else {
+            window.location.href = 'see-more.html';
+          }
+        });
+        const debouncedRender = debounce(val=>{ render(val); }, 200);
+        input.addEventListener('input', ()=> debouncedRender(input.value.trim()));
+              // Also handle search button click for accessibility
+              document.getElementById('search-btn').addEventListener('click', (e) => {
+                e.preventDefault();
+                const q = input.value.trim();
+                if(q) {
+                  window.location.href = `see-more.html?q=${encodeURIComponent(q)}`;
+                } else {
+                  window.location.href = 'see-more.html';
+                }
+              });
+      });
+    </script>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col about">
+        <h4>Check Out Guru</h4>
+        <p>Curated Shopee deals — trusted picks, handpicked promos and short reviews to help you buy smart.</p>
+      </div>
+
+      <div class="footer-col links">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="#featured">Top Deals</a></li>
+          <li><a href="#sec-electronics">Electronics</a></li>
+          <li><a href="#sec-home">Home</a></li>
+          <li><a href="#sec-fashion">Fashion</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col contact">
+        <h5>Contact</h5>
+        <p>Email: checkoutguruph@gmail.com</a></p>
+        <div class="social-links-footer" aria-label="Follow us">
+          <a class="social-link" href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" fill="currentColor"/></svg></a>
+          <a class="social-link" href="#" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3v12.5a3.5 3.5 0 1 1-3.5-3.5V7.2a6 6 0 0 0 3.5-1.2z" fill="currentColor"/><path d="M17 7.5a4 4 0 0 1-4-4v-.5h2a2 2 0 0 0 2 2v2.5z" fill="currentColor" opacity="0.9"/></svg></a>
+          <a class="social-link" href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="5" ry="5" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="12" cy="12" r="3" fill="currentColor"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2025 Check Out Guru — All rights reserved</p>
+    </div>
+  </footer>
+
+  <!-- Product detail modal -->
+  <div id="product-modal" class="modal" aria-hidden="true">
+    <div class="modal-inner" role="dialog" aria-modal="true">
+      <div class="modal-img" id="modal-img" style="background-image:none"></div>
+      <div class="modal-body">
+        <button class="close-btn" id="modal-close" aria-label="Close">✕</button>
+        <h3 id="modal-title"></h3>
+        <p id="modal-price" class="price"></p>
+        <p id="modal-desc">Product details and description can go here.</p>
+        <div style="margin-top:auto">
+          <a id="modal-affiliate" class="btn" href="#" target="_blank" rel="noopener noreferrer">Go to Shopee</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
+  <script>
+    (function(){
+      const modal = document.getElementById('product-modal');
+      const modalImg = document.getElementById('modal-img');
+      const modalTitle = document.getElementById('modal-title');
+      const modalPrice = document.getElementById('modal-price');
+      const modalAffiliate = document.getElementById('modal-affiliate');
+      const modalClose = document.getElementById('modal-close');
+      const backBtn = document.getElementById('back-to-top');
+
+      function openModal(data){
+        modalImg.style.backgroundImage = `url('${data.image}')`;
+        modalTitle.textContent = data.title || '';
+        modalPrice.textContent = data.price ? ('P' + data.price) : '';
+        modalAffiliate.href = data.affiliate || '#';
+        modal.classList.add('open'); modal.setAttribute('aria-hidden','false');
+      }
+      function closeModal(){ modal.classList.remove('open'); modal.setAttribute('aria-hidden','true'); }
+
+      document.body.addEventListener('click', (e)=>{
+        const card = e.target.closest('.card');
+        const fcard = e.target.closest('.featured-card');
+        if(card && !e.target.closest('a')){ openModal(card.dataset); }
+        else if(fcard && !e.target.closest('a')){ openModal(fcard.dataset); }
+
+        const aff = e.target.closest('.btn');
+        if(aff){
+          const parent = aff.closest('.card') || aff.closest('.featured-card');
+          const id = parent ? parent.dataset.id : null;
+          if(id){ const key = 'clicks_'+id; const count = parseInt(localStorage.getItem(key)||'0',10)+1; localStorage.setItem(key,String(count)); }
+        }
+      });
+
+      if(modalClose) modalClose.addEventListener('click', closeModal);
+      if(modal) modal.addEventListener('click', (e)=>{ if(e.target===modal) closeModal(); });
+
+      window.addEventListener('scroll', ()=>{ if(window.scrollY>320) backBtn.classList.add('show'); else backBtn.classList.remove('show'); });
+      backBtn.addEventListener('click', ()=> window.scrollTo({top:0,behavior:'smooth'}));
+    })();
+  </script>
+  <!-- Hero slider script removed -->
+  <script>
+    // Featured grid scroll controls (Top Deals)
+    (function(){
+      const featured = document.getElementById('featured');
+      const prev = document.querySelector('.featured-prev');
+      const next = document.querySelector('.featured-next');
+      if(!featured || !prev || !next) return;
+
+      function scrollAmount(){ return Math.max(280, Math.round(featured.clientWidth * 0.7)); }
+
+      prev.addEventListener('click', ()=>{ featured.scrollBy({left: -scrollAmount(), behavior: 'smooth'}); });
+      next.addEventListener('click', ()=>{ featured.scrollBy({left: scrollAmount(), behavior: 'smooth'}); });
+
+      function updateButtons(){
+        prev.disabled = featured.scrollLeft <= 8;
+        next.disabled = featured.scrollLeft + featured.clientWidth >= featured.scrollWidth - 8;
+      }
+
+      featured.addEventListener('scroll', ()=>{ window.requestAnimationFrame(updateButtons); });
+      window.addEventListener('resize', ()=>{ window.requestAnimationFrame(updateButtons); });
+
+      // initialize (wait until content renders)
+      setTimeout(updateButtons, 250);
+    })();
+    </script>
+
+    <script>
+      // Simple banner carousel: next/prev and show/hide slides
+      (function(){
+        const carousel = document.querySelector('.banner-carousel');
+        if(!carousel) return;
+        const track = carousel.querySelector('.banner-track');
+        const slides = Array.from(carousel.querySelectorAll('.banner-slide'));
+        const prev = document.querySelector('.banner-prev');
+        const next = document.querySelector('.banner-next');
+        let idx = 0;
+        const total = slides.length;
+        let autoplayId = null;
+
+        function update(){
+          const pct = -idx * 100;
+          if(track) track.style.transform = `translateX(${pct}%)`;
+          slides.forEach((s,i)=> s.setAttribute('aria-hidden', String(i!==idx)));
+        }
+
+        function go(n){ idx = (n + total) % total; update(); }
+
+        if(total <= 1){ if(prev) prev.style.display='none'; if(next) next.style.display='none'; update(); return; }
+
+        prev && prev.addEventListener('click', ()=>{ go(idx - 1); resetAutoplay(); });
+        next && next.addEventListener('click', ()=>{ go(idx + 1); resetAutoplay(); });
+
+        document.addEventListener('keydown', (e)=>{ if(e.key==='ArrowLeft') prev && prev.click(); else if(e.key==='ArrowRight') next && next.click(); });
+
+        function startAutoplay(){ if(autoplayId) return; autoplayId = setInterval(()=>{ go(idx + 1); }, 2000); }
+        function stopAutoplay(){ if(!autoplayId) return; clearInterval(autoplayId); autoplayId = null; }
+        function resetAutoplay(){ stopAutoplay(); startAutoplay(); }
+
+        // pause on hover/focus
+        carousel.addEventListener('mouseenter', stopAutoplay);
+        carousel.addEventListener('mouseleave', startAutoplay);
+        carousel.addEventListener('focusin', stopAutoplay);
+        carousel.addEventListener('focusout', startAutoplay);
+
+        // initialize
+        update(); startAutoplay();
+      })();
+  </script>
+</body>
+</html>

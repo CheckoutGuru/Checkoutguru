@@ -1,0 +1,30 @@
+{
+  "collections": [
+    {"id": "solar-pendant", "title": "Solar Pendant", "desc": "18k gold, satin finish", "price": "$1,280", "image": "images/jewelry/jewel1.jpg"},
+    {"id": "stacking-rings", "title": "Stacking Rings", "desc": "Set of 3, subtle textures", "price": "$860", "image": "images/jewelry/jewel2.jpg"},
+    {"id": "harmonia-hoops", "title": "Harmonia Hoops", "desc": "Polished hoops, lightweight", "price": "$420", "image": "images/jewelry/jewel3.webp"},
+    {"id": "luna-necklace", "title": "Luna Necklace", "desc": "Delicate chain, subtle charm", "price": "$980", "image": "images/jewelry/jewel4.jpg"},
+    {"id": "auric-cuff", "title": "Auric Cuff", "desc": "Open cuff, satin finish", "price": "$1,100", "image": "images/jewelry/jewel1.jpg"},
+    {"id": "opal-inlay", "title": "Opal Inlay Ring", "desc": "Opal set, 14k gold", "price": "$720", "image": "images/jewelry/jewel2.jpg"},
+    {"id": "solitaire-classic", "title": "Solitaire Classic", "desc": "Timeless solitaire ring", "price": "$2,400", "image": "images/jewelry/jewel3.webp"},
+    {"id": "celeste-drops", "title": "Celeste Drops", "desc": "Elegant drop earrings", "price": "$640", "image": "images/jewelry/jewel4.jpg"},
+    {"id": "hollow-hoop", "title": "Hollow Hoop", "desc": "Lightweight hoops", "price": "$380", "image": "images/jewelry/jewel1.jpg"},
+    {"id": "twist-band", "title": "Twist Band", "desc": "Textured wedding band", "price": "$540", "image": "images/jewelry/jewel2.jpg"},
+    {"id": "cascade-necklace", "title": "Cascade Necklace", "desc": "Layered chain effect", "price": "$1,480", "image": "images/jewelry/jewel3.webp"},
+    {"id": "petal-studs", "title": "Petal Studs", "desc": "Floral stud earrings", "price": "$320", "image": "images/jewelry/jewel4.jpg"},
+    {"id": "orbit-pendant", "title": "Orbit Pendant", "desc": "Sculpted geometric pendant", "price": "$990", "image": "images/jewelry/jewel1.jpg"},
+    {"id": "textured-bangle", "title": "Textured Bangle", "desc": "Hand-hammered finish", "price": "$820", "image": "images/jewelry/jewel2.jpg"},
+    {"id": "mosaic-ring", "title": "Mosaic Ring", "desc": "Multi-stone inlay", "price": "$1,600", "image": "images/jewelry/jewel3.webp"},
+    {"id": "eclipse-collar", "title": "Eclipse Collar", "desc": "Bold collar necklace", "price": "$2,200", "image": "images/jewelry/jewel4.jpg"}
+  ],
+  "bestsellers": [
+    {"id": "solitaire-classic", "title": "Solitaire Classic", "desc": "Timeless solitaire ring", "price": "$2,400", "image": "images/jewelry/jewel3.webp"},
+    {"id": "solar-pendant", "title": "Solar Pendant", "desc": "18k gold, satin finish", "price": "$1,280", "image": "images/jewelry/jewel1.jpg"},
+    {"id": "eclipse-collar", "title": "Eclipse Collar", "desc": "Bold collar necklace", "price": "$2,200", "image": "images/jewelry/jewel4.jpg"},
+    {"id": "harmonia-hoops", "title": "Harmonia Hoops", "desc": "Polished hoops, lightweight", "price": "$420", "image": "images/jewelry/jewel3.webp"},
+    {"id": "textured-bangle", "title": "Textured Bangle", "desc": "Hand-hammered finish", "price": "$820", "image": "images/jewelry/jewel2.jpg"},
+    {"id": "auric-cuff", "title": "Auric Cuff", "desc": "Open cuff, satin finish", "price": "$1,100", "image": "images/jewelry/jewel1.jpg"},
+    {"id": "celeste-drops", "title": "Celeste Drops", "desc": "Elegant drop earrings", "price": "$640", "image": "images/jewelry/jewel4.jpg"},
+    {"id": "cascade-necklace", "title": "Cascade Necklace", "desc": "Layered chain effect", "price": "$1,480", "image": "images/jewelry/jewel3.webp"}
+  ]
+}

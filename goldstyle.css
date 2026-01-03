@@ -41,8 +41,6 @@ header{ position:sticky; top:0; z-index:50; backdrop-filter: blur(6px); backgrou
 .hero-visual{ position:absolute; inset:0; z-index:0; width:100%; height:100%; max-width:none; border-radius:18px; overflow:hidden; box-shadow:0 30px 60px rgba(8,8,8,0.18); }
 .hero-visual img, .hero-visual video{ width:100%; height:100%; object-fit:cover; display:block; z-index:0 }
 .hero-visual::after{ content:''; position:absolute; inset:0; background:linear-gradient(180deg, rgba(0,0,0,0.18), rgba(0,0,0,0.42)); pointer-events:none; z-index:1 }
-/* Mobile-friendly fallback: use a warm poster image + gradient so video-blocking doesn't show black */
-.hero-visual{ background-image: linear-gradient(180deg, rgba(10,6,2,0.45), rgba(0,0,0,0.32)), url('images/jewelry/jewel1.jpg'); background-size:cover; background-position:center; background-repeat:no-repeat }
 .hero .copy{ position:relative; z-index:3; width:100%; max-width:980px; display:flex; flex-direction:column; gap:14px; justify-content:center; align-items:center; text-align:center; padding:28px }
 .hero h1{ font-family:'Playfair Display', serif; font-size:clamp(34px,5.6vw,72px); margin:0; color:#fff; line-height:1.02; font-weight:700; letter-spacing:0.3px }
 .hero p.lead{ margin:0; color:rgba(255,255,255,0.94); font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; font-weight:300; font-size:clamp(15px,2.2vw,20px); max-width:880px; line-height:1.5 }
@@ -158,10 +156,6 @@ footer{ background:linear-gradient(180deg,#fffaf6,#f8f0e2); border-top:1px solid
   .contact-forms{ grid-template-columns:1fr }
   .hero .copy{ align-items:center; text-align:center }
   .hero .shop-btn{ align-self:center }
-  /* Ensure hero copy is visible on mobile against the fallback */
-  .hero .copy, .hero h1, .hero p.lead, .hero .chip, .hero .hero-sub{ color:#fff !important }
-  /* Hide the video element on mobile so the fallback background shows instead of a black box */
-  .hero-visual video{ display:none !important }
 }
 
 /* Mobile footer: stack columns, increase touch targets, and simplify layout for a modern feel */

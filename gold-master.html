@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Gold Master Jewelry — Elegant Collection</title>
+  <title>The  Gold Master Jewelry — Elegant Collection</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="goldstyle.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
 <body>
   <header>
     <div class="site-wrap nav">
-      <div class="brand">Gold Master Jewelry</div>
+      <div class="brand">The Gold Master Jewelry</div>
       <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation">
         <svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect y="0" width="22" height="2" rx="1" fill="#3b2a00"/><rect y="6" width="22" height="2" rx="1" fill="#3b2a00"/><rect y="12" width="22" height="2" rx="1" fill="#3b2a00"/></svg>
       </button>
@@ -59,6 +59,50 @@
       
 
       <div id="bestsellers-grid" class="grid best-grid" aria-live="polite" aria-label="Best sellers"></div>
+    </section>
+
+    <!-- Section: Services -->
+    <section id="services" aria-label="Services">
+      <h2 class="section-title">Services</h2>
+      
+      <div class="services-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-top: 24px;">
+        
+        <div class="service-card">
+          <h3>We Buy Scrap Gold & Pawned Jewelry</h3>
+          <p class="muted">We accept rings, necklaces, bracelets, earrings, and other gold jewelry—whether used, damaged, or previously pawned.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Custom Ring Design (Made to Order)</h3>
+          <p class="muted">We create customized rings based on your request, from classic to modern designs—crafted with care to match your style and occasion.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Jewelry for Sale</h3>
+          <p class="muted">Explore our collection of earrings, necklaces, and bracelets, made with quality materials and timeless designs.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Fair & Transparent Appraisal</h3>
+          <p class="muted">Every piece is carefully evaluated based on weight and gold purity, with a clear explanation so you understand its true value.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Instant Cash Payment</h3>
+          <p class="muted">Get paid immediately after appraisal—fast, secure, and hassle-free.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Trusted & Legit Jewelry Buyer & Seller</h3>
+          <p class="muted">Known for honest transactions, professional service, and customer satisfaction.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Fast & Professional Process</h3>
+          <p class="muted">Smooth, confidential, and reliable service from appraisal to payment.</p>
+        </div>
+
+      </div>
     </section>
 
     <!-- Section 3: About (story) -->
@@ -114,9 +158,9 @@
     <!-- Section 5: Contact / Orders (modernized) -->
     <section id="contact" aria-label="Contact and Orders">
       <h2 class="section-title">Contact & Orders</h2>
-      <p class="muted">Questions or custom orders? Reach out — we respond promptly via email or social. Use the order form to request a bespoke piece or reserve a product.</p>
+      <p class="muted">Questions or custom orders? Reach out — we respond promptly via email or social.</p>
 
-      <div class="contact-forms contact-modern" style="margin-top:18px;">
+      <div class="contact-forms contact-modern" style="margin-top:18px; display:grid; grid-template-columns:1fr 1fr; gap:22px; align-items:start;">
         <div class="contact-card">
           <h4 style="margin-top:0;">Get in touch</h4>
           <p class="muted">Email us for enquiries and custom orders</p>
@@ -138,48 +182,20 @@
           </div>
         </div>
 
-        <form class="order-form" onsubmit="event.preventDefault(); handleOrderForm(this);" aria-label="Order form">
-          <h4 style="margin-top:0;">Place an order or request a quote</h4>
-
-          <div class="field">
-            <label for="o-name">Full name</label>
-            <input id="o-name" name="name" class="input" placeholder="Your name" required>
-          </div>
-
-          <div class="field two">
-            <label for="o-email">Email</label>
-            <input id="o-email" name="email" class="input" type="email" placeholder="you@example.com" required>
-            <label for="o-phone">Phone</label>
-            <input id="o-phone" name="phone" class="input" type="tel" placeholder="Optional">
-          </div>
-
-          <div class="field">
-            <label for="o-product">Product</label>
-            <select id="o-product" name="product" class="input">
-              <option value="">— Select a product or enter details below —</option>
-              <option>Solar Pendant — $1,280</option>
-              <option>Stacking Rings — $860</option>
-              <option>Harmonia Hoops — $420</option>
-              <option>Custom / Bespoke Request</option>
-            </select>
-          </div>
-
-          <div class="field">
-            <label for="o-message">Message</label>
-            <textarea id="o-message" name="message" rows="4" class="input" placeholder="Tell us about the piece, size, finish, or timeline."></textarea>
-          </div>
-
-          <div class="contact-actions" style="display:flex; gap:10px; align-items:center; margin-top:8px;">
-            <button class="send" type="submit">Send Order Request</button>
-            <button type="button" class="alt-btn" onclick="location.href='mailto:hello@goldmasterjewelry.com'">Email Us</button>
-          </div>
-
-          <div class="muted" style="font-size:0.92rem; margin-top:8px;">We reply within 1–2 business days. For urgent requests call us.</div>
-        </form>
+        <div class="contact-image">
+          <img src="images/jewelry/jewel2.jpg" alt="Gold jewelry collection" style="width:100%; height:100%; object-fit:cover; border-radius:14px; box-shadow:0 12px 30px rgba(12,12,12,0.12);">
+        </div>
       </div>
     </section>
 
   </main>
+
+  <!-- Image Modal -->
+  <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+    <span class="modal-close" onclick="closeImageModal()">&times;</span>
+    <img class="modal-content" id="modalImage" alt="">
+    <div class="modal-caption" id="modalCaption"></div>
+  </div>
 
   <footer>
     <div class="site-wrap site-footer">
@@ -253,7 +269,7 @@
             if(!container || !items) return;
             var html = items.map(function(it){
               return '<article class="card">'
-                + '<img src="'+it.image+'" alt="'+(it.title||'')+'">'
+                + '<img src="'+it.image+'" alt="'+(it.title||'')+'" class="clickable-image" style="cursor:pointer;" onclick="openImageModal(this, \''+it.title+'\')" title="Click to enlarge">'
                 + '<h4>'+ (it.title||'') +'</h4>'
                 + '<div class="muted">'+ (it.desc||'') +'</div>'
                 + '<div class="price">'+ (it.price||'') +'</div>'
@@ -295,6 +311,31 @@
         });
       }
     })();
+
+    // Image Modal Functions
+    function openImageModal(img, title) {
+      var modal = document.getElementById('imageModal');
+      var modalImg = document.getElementById('modalImage');
+      var caption = document.getElementById('modalCaption');
+      
+      modal.style.display = 'flex';
+      modalImg.src = img.src;
+      caption.textContent = title || img.alt;
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeImageModal() {
+      var modal = document.getElementById('imageModal');
+      modal.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeImageModal();
+      }
+    });
   </script>
 </body>
 </html>
